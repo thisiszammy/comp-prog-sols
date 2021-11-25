@@ -22,21 +22,25 @@ int main(){
 		
 		if(arr[i] == 1){
 			oddCount++;
-			if(oddCount>evenCount){
-				index = i;
-			}
 		}else{
 			evenCount++;
-			if(evenCount>oddCount){
-				index = i;
-			}
 		}
-		
-			
 		
 	}
 	
-	std::cout << index-1;
+	for(int i = 0; i < n; i++){
+		if(oddCount>evenCount){
+			if(arr[i] == 0){
+				index = i+1;
+			}
+		}else{
+			if(arr[i] == 1){
+				index = i+1;
+			}
+		}
+	}
+	
+	std::cout << index;
 	
 	
 	return 0;
