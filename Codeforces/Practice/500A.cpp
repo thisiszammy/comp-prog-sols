@@ -21,8 +21,10 @@ int main(){
 		if(start == t-1){
 			std::cout << "YES";
 			return 0;
-		}else{
-			start+=paths[start];
+		}
+		
+		if(start > t-1){
+			break;
 		}
 	}
 	
