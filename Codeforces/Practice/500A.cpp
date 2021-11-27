@@ -26,6 +26,8 @@ int main(){
 		if(start > t-1){
 			break;
 		}
+		
+		start += paths[start];
 	}
 	
 	std::cout << "NO";
