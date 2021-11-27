@@ -11,20 +11,17 @@ int main(){
 	
 	int paths[n-1];
 	
+	
 	for(int i = 0; i < n-1; i++){
 		std::cin >> paths[i];
 	}
 	
 	int start = 0;
 	
-	while(start < n-1){
+	while(start <= t-1){
 		if(start == t-1){
 			std::cout << "YES";
 			return 0;
-		}
-		
-		if(start > t-1){
-			break;
 		}
 		
 		start += paths[start];
