@@ -45,7 +45,6 @@ int main(){
 		long long int budget;
 		std::cin >> budget;
 		std::cout << shortSearch(prices, budget, 0, n-1)+1 << std::endl;
-				
 	}
 	
 	
